@@ -2,6 +2,10 @@ body {
     background-image: linear-gradient(rgb(245, 239, 239), rgb(79, 79, 80));
 }
 
+img{
+	width: 100%;
+}
+
 .nav-position {
     margin-left: 39%;
 }
@@ -71,4 +75,88 @@ body {
 #copyright{
     padding: 20px;
     text-align: center;
+}
+
+
+#nav {
+	text-align: center;
+	margin: auto;
+	height: 40px;
+	margin-bottom: -40px;
+	/* width: 40%; */
+	background: rgb(255, 255, 255, 0.5);
+	z-index: 1000px;
+}
+
+
+
+@media (min-width: 100px){
+	#nav-outer-container{
+		position: fixed;
+		left: 20%;
+	}
+}
+
+
+@media (min-width: 500px){
+	#nav-outer-container{
+		position: fixed;
+		left: 40%;
+	}
+}
+
+
+
+
+
+
+
+#nav > a{
+	color: #666666;
+	margin-right: 20px;
+}
+
+#nav > a:hover{
+	color:gray;
+	text-decoration: none;
+}
+
+
+#get-to-know-me > img{
+	border-radius: 10px;
+	float: left;
+	max-width: 120px;
+	margin: 0px 10px 10px 0px;
+}
+
+
+#get-to-know-me{
+	margin: 40px;
+}
+
+
+@media (min-width: 100px){
+	#my-works{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: auto;
+		grid-gap: 30px;
+		padding: 40px;
+	}
+}
+
+
+@media (min-width: 700px){
+	#my-works{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: auto;
+		grid-gap: 30px;
+		padding: 40px;
+	}
+}
+
+
+#my-works-top{
+	margin: 40px;
 }
